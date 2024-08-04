@@ -1,0 +1,50 @@
+body {
+    background-color: #e6e6fa;
+  }
+  
+  .formParent {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #name,
+  #message,
+  #phone,
+  #email {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px #778899;
+    padding: 8px;
+  }
+  
+  #nameError,#messageError,#emailError,#phoneError {
+    position: relative;
+    text-align: start;
+    color: red;
+    font-size: 12px;
+  
+  }
+  
+  .title {
+    color: red;
+    text-align: center;
+  }
+  
+  .giveAnswer {
+    color: #778899;
+  }
+  
+  #sendButton {
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+  }

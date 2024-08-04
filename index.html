@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <h1 class="title">We would like to help you</h1>
+    <div class="formParent">
+    <form id="form">
+      <input
+        id="name"
+        name="user_name"
+        type="text" 
+        placeholder="Name"
+      />
+      <div id="nameError">
+      </div>
+      <textarea
+        id="message"
+        name="user_message"
+        minlength="5"
+        maxlength="150"
+        placeholder="Message"
+      ></textarea>
+      <div id="messageError">
+      </div>
+      <p class="giveAnswer">HOW TO ANSWER YOU?</p>
+      <input
+        id="phone"
+        type="tel"
+        placeholder="Phone number"
+        name="user_phone"
+        pattern="/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/"
+      />
+      <div id="phoneError">
+    </div>
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+        name="user_email"
+        pattern="^\S+@\S+\.\S+$"
+      />
+      <div id="emailError"></div>
+      <button id="sendButton" type="submit">Send message</button>
+    </form>
+</div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
